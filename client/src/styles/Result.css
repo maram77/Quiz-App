@@ -1,0 +1,24 @@
+.passed {
+    background-color: #64c832;
+     padding: 10px;
+     text-align: center; /* Center the text horizontally */
+     margin-bottom: 20px !important; 
+     color:white;
+     margin-top: 1Opx;
+     width: auto;
+     display: block;
+
+   }
+
+   .failed {
+    background-color: rgb(242, 61, 61);
+    padding: 10px;
+     text-align: center; /* Center the text horizontally */
+     color:white;
+     margin-top: 1Opx;
+     width: auto;
+     line-height: 1.4;
+     display: block;
+    
+
+   }

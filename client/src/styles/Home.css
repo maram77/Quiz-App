@@ -1,0 +1,140 @@
+.Container2 {
+  padding: 0;
+  width: 100% !important;
+  overflow-x: hidden !important;
+  min-height: 100vh;
+  margin-bottom: 0;
+}
+
+.header-container {
+ background-color: #64c832;
+  padding: 20px;
+  text-align: center; /* Center the text horizontally */
+  margin-bottom: 20px !important; /* Add a margin-bottom to create space between header and home-container */
+}
+
+.header {
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container {
+  max-width: 300px;
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  margin-top: -50px; /* Adjust the value as needed */
+  position: relative;
+}
+
+.image-container img {
+  max-width: 100%; /* Adjust the width as needed */
+  height: auto;
+  animation: moveImage 4s linear infinite; /* Add animation */
+}
+
+.questions-container {
+  height: 100%; /* Adjust the height as needed */
+  overflow-y: hidden;
+}
+
+.attachment-div {
+  grid-gap: 10px;
+  width: 100% !important;
+  max-width: 600px !important;
+  margin: 1rem 0 !important;
+}
+
+.attachment {
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  margin: 0 auto;
+  cursor: pointer;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  width: fit-content;
+}
+
+.attachment img,
+.pdf-icon {
+  width: 40px;
+}
+
+.attachment > p {
+  margin-top: 6% !important;
+}
+
+.attachment .icon-img {
+  align-self: center;
+}
+
+
+.button-reset {
+  /* Reset default button styles */
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.submit-btn {
+  /* Custom button styles */
+  display: inline-block;
+ 
+  background-image: linear-gradient(90deg, #182099, #2F22A7, #7F2BD5, #8E2CDE, #3E24AF);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  padding: 8px 16px;
+  width: 250px;
+  cursor: pointer;
+  margin-left: 15px;
+  border-style: none;
+}
+
+
+/* Add this to your Home.css or create a new CSS file */
+.home-background {
+  background-image: url("../../public/img/slider.png"); /* Replace with your actual background image URL */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  image-rendering: crisp-edges;
+ 
+}
+
+.question-background {
+  background-image: url("../../public/img/slider.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.MiseAJour {
+  margin-top: 4px;
+}
+
+@keyframes moveImage {
+  0% {
+    transform: translateY(0); /* Start position */
+  }
+  50% {
+    transform: translateY(-50px); /* Midway position */
+  }
+  100% {
+    transform: translateY(0); /* End position */
+  }
+}
