@@ -14,7 +14,9 @@ $ cd Quiz-App
 ```
 $ cd server
 $ npm install
+$ npm install express-async-handler
 ```
+
 
 3. Frontend Configuration
 ```
